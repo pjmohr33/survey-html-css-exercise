@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="submit" method="post" autocomplete="off">
+    <fieldset>
+      <legend>Add user</legend>
+
+      <label for="firstName">First name</label>
+      <input type="text" id="firstName" name="first_name">
+
+      <label for="lastName">Last name</label>
+      <input type="text" id="lastName" name="last_name">
+
+      <label for="emailAddress">Email address</label>
+      <input type="email" id="emailAddress" name="email_address">
+
+      <label for="status">Status</label>
+      <select id="status" name="status">
+        <option value="student">Student</option>
+        <option value="instructor">Instructor</option>
+        <option value="guest">Guest</option>
+      </select>
+
+      <div>
+        <p>Choose your favorite programming language:</p>
+
+        <input type="radio" id="html" name="favorite_language" value="html">
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="favorite_language" value="css">
+        <label for="css">CSS</label>
+        <input type="radio" id="javascript" name="favorite_language" value="javascript">
+        <label for="javascript">JavaScript</label>
+      </div>
+
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments"></textarea>
+
+      <label for="current_date">Current date</label>
+      <input type="date" id="current_date" name="current-date">
+
+      <input type="checkbox" id="newsletter" name="newsletter">
+      <label for="newsletter">Sign up for newsletter</label>
+
+      <input type="checkbox" id="terms_conditions" name="terms_conditions">
+      <label for="terms_conditions">Agree to terms and conditions</label>
+
+      <button type="submit">Submit</button>
+    </fieldset>
+
+  </form>
+</body>
+
+</html>
