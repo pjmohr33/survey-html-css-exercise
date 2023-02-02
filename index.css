@@ -8,30 +8,129 @@ html {
 
 body {
   height: 100%;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+legend{
+  border: 2px solid black;
+  padding: 0 5% 0 1%;
+}
 fieldset{
-  min-height: 450px;
-  min-width: 600px;
+  display: flex;
+  justify-content: center;
 }
 
-#content{
+div#content{
 display: flex;
 flex-direction: column;
-padding: 20px 120px;
-justify-content: center;;
+margin: 0 100px 30px;
+justify-content: center;
+width: 40%;
 }
 
-label{
+/* Start of contact info CSS */
+label.contact-info{
   display: block;
   width: auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+input.contact-info{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Start of Status Date field CSS */
+div.status-date{
+  display: flex;
+  justify-content: space-between;
+}
+label[class*=status-date-item]{
+ width: 100%;
+}
+div[class*=status-date-div]{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.status-date-div1{
+  margin: 0 5px 0 0;
+}
+.status-date-div2{
+  margin: 0 0 0 5px;
+}
+
+.status-date-item1,
+.status-date-item3{
+  text-align: center;
+}
+.status-date-item2,
+.status-date-item4{
+  width: 100%;
 }
 
 
-/* input:not(.radio){
+/* Start of radio css to pick language */
+div.radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.language-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-} */
+p.radio{
+ text-align: center;
+ margin: 10px 0 5px;
+}
+
+input.radio{
+  width: 1.2em;
+  height: 1.2em;
+}
+label.radio{
+  text-align: center;
+}
+
+/* Css for comments section */
+div.comments1{
+  padding: 10px 0 ;
+}
+label.comments1 {
+  padding-left: 10px;
+}
+
+textarea.comments1{
+  width: 100%;
+  min-height: 40px;
+
+}
+
+/* CSS for the optin options: */
+div.optins{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input.optins{
+  width: 2em;
+  height: 2em;
+  text-align: center;
+}
+
+/* CSS for button */
+button{
+  width: 50%;
+  margin: 10px auto;
+}

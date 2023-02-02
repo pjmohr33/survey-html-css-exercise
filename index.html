@@ -12,59 +12,73 @@
 <body>
   <form action="submit" method="post" autocomplete="off">
     <fieldset>
+
       <legend>Add user</legend>
+
       <div id=content>
 
-      </div>
-          <label for="firstName">First name</label>
-          <input type="text" id="firstName" name="first_name">
-
-
-        <label for="lastName">Last name</label>
-        <input type="text" id="lastName" name="last_name">
-
-
         <div>
-          <label for="emailAddress">Email address</label>
-          <input type="email" id="emailAddress" name="email_address">
-        </div>
-        <div>
-          <label for="status">Status</label>
-          <select id="status" name="status">
-            <option value="student">Student</option>
-            <option value="instructor">Instructor</option>
-            <option value="guest">Guest</option>
-          </select>
-
-          <label for="current_date">Current date</label>
-          <input type="date" id="current_date" name="current-date">
-
+          <label class="contact-info" for="firstName">First name:</label>
+          <input class="contact-info" type="text" id="firstName" name="first_name">
         </div>
 
         <div>
-          <p>Choose your favorite programming language:</p>
-
-          <input class="radio" type="radio" id="html" name="favorite_language" value="html">
-          <label for="html">HTML</label>
-          <input class="radio" type="radio" id="css" name="favorite_language" value="css">
-          <label for="css">CSS</label>
-          <input class="radio" type="radio" id="javascript" name="favorite_language" value="javascript">
-          <label for="javascript">JavaScript</label>
+          <label class="contact-info" for="lastName">Last name:</label>
+          <input class="contact-info" type="text" id="lastName" name="last_name">
         </div>
         <div>
-          <label for="comments">Comments</label>
-          <textarea id="comments" name="comments"></textarea>
+          <label class="contact-info" for="emailAddress">Email address:</label>
+          <input class="contact-info" type="email" id="emailAddress" name="email_address">
         </div>
 
-        <div>
-          <input type="checkbox" id="newsletter" name="newsletter">
-          <label for="newsletter">Sign up for newsletter</label>
-        </div>
-        <div>
-          <input type="checkbox" id="terms_conditions" name="terms_conditions">
-          <label for="terms_conditions">Agree to terms and conditions</label>
+        <div class="status-date">
+          <div class="status-date-div1">
+            <label class="status-date-item1" for="status">Status:</label>
+            <select class="status-date-item2" id="status" name="status">
+              <option value="student">Student</option>
+              <option value="instructor">Instructor</option>
+              <option value="guest">Guest</option>
+            </select>
+          </div>
+          <div class="status-date-div2">
+            <label class="status-date-item3" for="current_date">Current date:</label>
+            <input class="status-date-item4" type="date" id="current_date" name="current-date">
+          </div>
         </div>
 
+
+        <p class="radio">Choose your favorite language:</p>
+        <div class="radio">
+          <div class="language-div">
+            <input class="radio" type="radio" id="html" name="favorite_language" value="html">
+            <label class="radio" for="html">HTML</label>
+          </div>
+          <div class="language-div">
+            <input class="radio" type="radio" id="css" name="favorite_language" value="css">
+            <label class="radio" for="css">CSS</label>
+          </div>
+          <div class="language-div">
+            <input class="radio" type="radio" id="javascript" name="favorite_language" value="javascript">
+            <label class="radio" for="javascript">JavaScript</label>
+          </div>
+        </div>
+        <div class="comments1">
+          <label class="comments1" for="comments">Comments:</label>
+          <textarea class="comments1" id="comments" name="comments"></textarea>
+        </div>
+        <div class="optins">
+          <div>
+            <input class="optins" type="checkbox" id="newsletter" name="newsletter">
+          </div>
+          <div><label class="optins" for="newsletter">Sign up for newsletter</label>
+          </div>
+          <div>
+            <input class="optins" type="checkbox" id="terms_conditions" name="terms_conditions">
+          </div>
+          <div>
+            <label class="optins" for="terms_conditions">Agree to terms and conditions</label>
+          </div>
+        </div>
         <button type="submit">Submit</button>
       </div>
     </fieldset>
